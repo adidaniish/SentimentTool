@@ -108,3 +108,5 @@ wordcloud==1.9.3
 wrapt==1.16.0
 zipp==3.20.1
 zope.interface==7.0.3
+
+python_version == "3.10"
