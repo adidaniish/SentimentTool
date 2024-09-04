@@ -9,3 +9,6 @@ setuptools==70.2.0
 transformers==4.42.3
 wordcloud==1.9.3
 gunicorn==23.0.0
+torch==2.4.0
+tensorflow==2.16.2
+flax==0.8.5
