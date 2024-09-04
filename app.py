@@ -19,6 +19,7 @@ from googleapiclient.discovery import build
 import re
 import emoji
 import os
+import tensorflow as tf
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 import pandas as pd
 from datetime import datetime
@@ -30,6 +31,7 @@ app = Flask(__name__)
 
 API_KEY = os.getenv('YOUTUBE_API_KEY', 'default_fallback_key')
 youtube = build('youtube', 'v3', developerKey=API_KEY)
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 positive_comments = []
 negative_comments = []
